@@ -46,6 +46,7 @@ def printProxy():
         connection.commit()
 
 #вставка списка прокси в базу данных
+#!!!!!!проверить вставку(вставляется ли список если один элемент повторяется)
 def insert(proxylist):
     with sqlite3.connect('proxy.db') as connection:
         cursor = connection.cursor()
@@ -182,7 +183,7 @@ def proxychecker(proxy):
 
 #parsing_proxy2()
 #parsing_proxy3()
-parsing_proxy4()
+#parsing_proxy4()
 #parsing_proxy5()
 #printDb()
 #proxyCheck()
